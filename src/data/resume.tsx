@@ -2,26 +2,27 @@ import { Icons } from "@/components/icons";
 import { CodeIcon, HomeIcon, NotebookIcon, PencilLine } from "lucide-react";
 
 export const DATA = {
-  name: "Dillion Verma",
+  name: "Om Pharate",
   initials: "DV",
-  url: "https://dillion.io",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  url: "https://www.ompharate.tech/",
+  location: "Pune india.",
+  locationLink: "https://maps.app.goo.gl/njRUrLW4M1FbgVg59",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Github.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
-  avatarUrl: "/me.png",
+    "Currently, I am a third-year Computer Science Engineering student at [I2IT Pune](https://www.isquareit.edu.in/), passionate about building innovative software solutions. I am also actively involved in [open source contributions](https://github.com/ompharate) and have a proven ability to learn new technologies and continuously strive to enhance my skills and knowledge.",
+  avatarUrl: "/me.jpg",
   skills: [
     "React",
     "Next.js",
+    "GraphQL",
+    "Prisma orm",
     "Typescript",
     "Node.js",
-    "Python",
-    "Go",
+    "Mongodb",
     "Postgres",
+    "AWS",
     "Docker",
-    "Kubernetes",
     "Java",
     "C++",
   ],
@@ -32,19 +33,19 @@ export const DATA = {
     { href: "#", icon: PencilLine, label: "Notes" },
   ],
   contact: {
-    email: "hello@example.com",
+    email: "ompharate31@example.com",
     tel: "+123456789",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/ompharate",
         icon: Icons.github,
 
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://in.linkedin.com/in/ompharate11",
         icon: Icons.linkedin,
 
         navbar: true,
@@ -56,17 +57,10 @@ export const DATA = {
 
         navbar: true,
       },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
-        navbar: true,
-      },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "ompharate31@gmail.com",
         icon: Icons.email,
-
         navbar: false,
       },
     },
@@ -148,55 +142,37 @@ export const DATA = {
   ],
   education: [
     {
-      school: "Buildspace",
-      href: "https://buildspace.so",
-      degree: "s3, s4, sf1, s5",
-      logoUrl: "/buildspace.jpg",
-      start: "2023",
-      end: "2024",
-    },
-    {
-      school: "University of Waterloo",
-      href: "https://uwaterloo.ca",
-      degree: "Bachelor's Degree of Computer Science (BCS)",
-      logoUrl: "/waterloo.png",
-      start: "2016",
-      end: "2021",
-    },
-    {
-      school: "Wilfrid Laurier University",
-      href: "https://wlu.ca",
-      degree: "Bachelor's Degree of Business Administration (BBA)",
+      school: "International Institute of Information Technology Pune.",
+      href: "https://www.isquareit.edu.in/",
+      degree: "Bachelor's Degree of Computer Engineering",
       logoUrl: "/laurier.png",
-      start: "2016",
-      end: "2021",
+      start: "2023",
+      end: "2026",
     },
     {
-      school: "International Baccalaureate",
-      href: "https://ibo.org",
-      degree: "IB Diploma",
+      school: "Institute of Technology And Engineering Malegaon (Bk)",
+      href: "https://ite.svpm.org.in/",
+      degree: "Diploma in Computer Engineering",
       logoUrl: "/ib.png",
-      start: "2012",
-      end: "2016",
+      start: "2020",
+      end: "2023",
     },
   ],
   projects: [
     {
-      title: "Chat Collect",
+      title: "ThemeCrafter",
       href: "https://chatcollect.com",
       dates: "Jan 2024 - Feb 2024",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "I developed a versatile Theme Store using the MERN stack,  offering a diverse range of high-quality themes. Integrated with Razorpay for seamless payment processing, this platform ensures a user-friendly experience from browsing to customization.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "Node Js",
+        "Express",
+        "Mongodb",
+        "React",
         "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Razorpay",
       ],
       links: [
         {
@@ -204,27 +180,32 @@ export const DATA = {
           href: "https://chatcollect.com",
           icon: <Icons.globe className="size-3" />,
         },
+        {
+          type: "Source",
+          href: "https://github.com/ompharate/themeStore",
+          icon: <Icons.github className="size-3" />,
+        },
       ],
       image: "",
       video:
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
     },
     {
-      title: "Magic UI",
+      title: "Creator Academy",
       href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      dates: "June 2024 - July 2024",
       active: true,
       description:
         "Designed, developed and sold animated UI components for developers.",
       technologies: [
         "Next.js",
         "Typescript",
-        "PostgreSQL",
+        "Mongodb",
         "Prisma",
         "TailwindCSS",
+        "Zod",
         "Stripe",
         "Shadcn UI",
-        "Magic UI",
       ],
       links: [
         {
@@ -241,68 +222,7 @@ export const DATA = {
       image: "",
       video: "https://cdn.magicui.design/bento-grid.mp4",
     },
-    {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
-      active: true,
-      description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
-    },
-    {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
-    },
+
   ],
   hackathons: [
     {
