@@ -12,25 +12,62 @@ export const DATA = {
   summary:
     "Currently, I am a third-year Computer Science Engineering student at [I2IT Pune](https://www.isquareit.edu.in/), passionate about building innovative software solutions. I am also actively involved in [open source contributions](https://github.com/ompharate) and have a proven ability to learn new technologies and continuously strive to enhance my skills and knowledge.",
   avatarUrl: "/me.jpg",
-  skills: [
-    "React",
-    "Next.js",
-    "GraphQL",
-    "Prisma orm",
-    "Typescript",
-    "Node.js",
-    "Mongodb",
-    "Postgres",
-    "AWS",
-    "Docker",
-    "Java",
-    "C++",
-  ],
+  
+    skills: [
+      {
+        "name": "React",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx_IW3VID-8ExLy8QTiywk3ZUXG76SvvikNQ&s"
+      },
+      {
+        "name": "Next.js",
+        "url":"https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png"
+      },
+      {
+        "name": "GraphQL",
+        url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMwyF9jqTzoCr79rP7GKWu_ZYEpFl_5fhoQg&s",
+      },
+      {
+        "name": "Prisma ORM",
+        url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIDkN92cpPFFg-3j4q7khMCH_nTnUC_wYhQg&s"
+      },
+      {
+        "name": "TypeScript",
+        url:"https://media.licdn.com/dms/image/D5612AQF1X3R7A10-GA/article-cover_image-shrink_720_1280/0/1696269587807?e=2147483647&v=beta&t=RezCmM0hMmBFdllWBKTmYA7hpmvTbBKjP8DSmV8cnUQ"
+      },
+      {
+        "name": "Node.js",
+        url:"https://miro.medium.com/v2/resize:fit:900/1*TY9uBBO9leUbRtlXmQBiug.png"
+      },
+      {
+        "name": "MongoDB",
+        "url":"https://teky.edu.vn/blog/wp-content/uploads/2021/08/Cach-su-dung-Mongodb-nhu-the-nao.jpg"
+      },
+      {
+        "name": "PostgreSQL",
+        "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUmnFYeOmmAlNV9_ZTu5cYgS2L55Q1pt9QyA&s"
+      },
+      {
+        "name": "AWS",
+        url:"https://miro.medium.com/v2/resize:fit:1200/1*tFl-8wQUENETYLjX5mYWuA.png"
+      },
+      {
+        "name": "Docker",
+        "url":"https://bunnyacademy.b-cdn.net/what-is-docker.png"
+      },
+      {
+        "name": "Java",
+        url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzKVrVcrrTL7A8B75qwwrpkAx3uOewEt9RbA&s"
+      },
+      {
+        "name": "C++",
+        url:"https://media.licdn.com/dms/image/D4E12AQFZ22tCQSGwDw/article-cover_image-shrink_600_2000/0/1687615910475?e=2147483647&v=beta&t=e0Dz4ia72MRYikHW_0Pc0JoAKJ3sFH3Vd5VO1RyAFPs"
+      }
+    ],  
+  
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    { href: "#", icon: CodeIcon, label: "Projects" },
-    { href: "#", icon: PencilLine, label: "Notes" },
+    { href: "https://dev.to/ompharate", icon: CodeIcon, label: "Dev.to" },
   ],
   contact: {
     email: "ompharate31@example.com",
@@ -55,7 +92,7 @@ export const DATA = {
         url: "https://dub.sh/dillion-twitter",
         icon: Icons.x,
 
-        navbar: true,
+        navbar: false,
       },
       email: {
         name: "Send Email",
@@ -68,77 +105,30 @@ export const DATA = {
 
   work: [
     {
-      company: "Atomic Finance",
-      href: "https://atomic.finance",
+      company: "Linkshub.Dev",
+      href: "https://github.com/rupali-codes/LinksHub/pull/2413",
       badges: [],
       location: "Remote",
       title: "Bitcoin Protocol Engineer",
-      logoUrl: "/atomic.png",
-      start: "May 2021",
-      end: "Oct 2022",
+      logoUrl: "/linkshub.png",
+      start: "July 2024",
+      end: "July 2024",
       description:
         "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
     },
     {
-      company: "Shopify",
+      company: "React.Dev",
       badges: [],
-      href: "https://shopify.com",
+      href: "https://github.com/reactjs/react.dev/pull/7051",
       location: "Remote",
       title: "Software Engineer",
-      logoUrl: "/shopify.svg",
-      start: "January 2021",
-      end: "April 2021",
+      logoUrl: "/react.svg",
+      start: "July 2024",
+      end: "July 2024",
       description:
         "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
     },
-    {
-      company: "Nvidia",
-      href: "https://nvidia.com/",
-      badges: [],
-      location: "Santa Clara, CA",
-      title: "Software Engineer",
-      logoUrl: "/nvidia.png",
-      start: "January 2020",
-      end: "April 2020",
-      description:
-        "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
-    },
-    {
-      company: "Splunk",
-      href: "https://splunk.com",
-      badges: [],
-      location: "San Jose, CA",
-      title: "Software Engineer",
-      logoUrl: "/splunk.svg",
-      start: "January 2019",
-      end: "April 2019",
-      description:
-        "Co-developed a prototype iOS app with another intern in Swift for the new Splunk Phantom security orchestration product (later publicly demoed and launched at .conf annual conference in Las Vegas). Implemented a realtime service for the iOS app in Django (Python) and C++; serialized data using protobufs transmitted over gRPC resulting in an approximate 500% increase in data throughput.",
-    },
-    {
-      company: "Lime",
-      href: "https://li.me/",
-      badges: [],
-      location: "San Francisco, CA",
-      title: "Software Engineer",
-      logoUrl: "/lime.svg",
-      start: "January 2018",
-      end: "April 2018",
-      description:
-        "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
-    },
-    {
-      company: "Mitre Media",
-      href: "https://mitremedia.com/",
-      badges: [],
-      location: "Toronto, ON",
-      title: "Software Engineer",
-      logoUrl: "/mitremedia.png",
-      start: "May 2017",
-      end: "August 2017",
-      description:
-        "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
-    },
+   
   ],
   education: [
     {
@@ -187,8 +177,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+      video:"/ThemeCrafter.mp4",
     },
     {
       title: "Creator Academy",
@@ -215,12 +204,12 @@ export const DATA = {
         },
         {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "https://github.com/ompharate/creator-academy.git",
           icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      video: "/creatorAcademy.mp4",
     },
 
   ],

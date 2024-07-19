@@ -42,7 +42,7 @@ export const ResumeCard = ({
     <Link
       href={href || "#"}
       className="block cursor-pointer"
-      onClick={handleClick}
+      // onClick={handleClick}
     >
       <Card className="flex">
         <div className="flex-none">

@@ -20,9 +20,9 @@ export default function Page() {
             <div className="flex-col flex flex-1 space-y-1.5">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                className="text-2xl font-bold tracking-tighter sm:text-2xl xl:text-5xl/none"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
+                text={`Hi, I'm ${DATA.name} 👋`}
               />
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
@@ -52,7 +52,7 @@ export default function Page() {
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Work Experience</h2>
+            <h2 className="text-xl font-bold">Open Source Contributions</h2>
           </BlurFade>
           {DATA.work.map((work, id) => (
             <BlurFade
@@ -102,10 +102,17 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
-          <div className="flex flex-wrap gap-1">
+          <div className="flex flex-wrap gap-1 justify-center">
             {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
+              <BlurFade
+                key={skill.name}
+                delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+              >
+                <Badge className="w-32 h-10 gap-2"  key={skill.name}>
+                  {" "}
+                  <img className="borde" width={25} height={25} src={skill?.url} alt="" />
+                  {skill.name}
+                </Badge>
               </BlurFade>
             ))}
           </div>
@@ -158,7 +165,7 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                ⭐ Open Source Contribution
+                  ⭐ Open Source Contribution
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   I like building things
