@@ -110,7 +110,7 @@ export default function Page() {
               >
                 <Badge className="w-32 h-10 gap-2"  key={skill.name}>
                   {" "}
-                  <img className="borde" width={25} height={25} src={skill?.url} alt="" />
+                  <img className="rounded-full" width={25} height={25} src={skill?.url} alt="" />
                   {skill.name}
                 </Badge>
               </BlurFade>
@@ -137,7 +137,7 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-3  mx-auto">
             {DATA.projects.map((project, id) => (
               <BlurFade
                 key={project.title}
@@ -171,12 +171,8 @@ export default function Page() {
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I attended{" "}
-                  {DATA.hackathons.length}+ hackathons. People from around the
-                  country would come together and build incredible things in 2-3
-                  days. It was eye-opening to see the endless possibilities
-                  brought to life by a group of motivated and passionate
-                  individuals.
+                I like open source and the community behind it. It fosters collaboration and innovation, empowering individuals to contribute and shape the future of technology.
+                recently i have contributed in 2 projects
                 </p>
               </div>
             </div>
@@ -220,8 +216,7 @@ export default function Page() {
                 >
                   with a direct question on LinkedIn
                 </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                and I&apos;ll respond whenever I can. 
               </p>
             </div>
           </BlurFade>
