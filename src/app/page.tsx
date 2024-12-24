@@ -108,9 +108,15 @@ export default function Page() {
                 key={skill.name}
                 delay={BLUR_FADE_DELAY * 10 + id * 0.05}
               >
-                <Badge className="w-32 h-10 gap-2"  key={skill.name}>
+                <Badge className="w-32 h-10 gap-2" key={skill.name}>
                   {" "}
-                  <img className="rounded-full" width={25} height={25} src={skill?.url} alt="" />
+                  <img
+                    className="rounded-full"
+                    width={25}
+                    height={25}
+                    src={skill?.url}
+                    alt=""
+                  />
                   {skill.name}
                 </Badge>
               </BlurFade>
@@ -118,8 +124,9 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       <section id="projects">
-        <div className="space-y-12 w-full py-12">
+        <div className="space-y-12 w-full   py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -137,13 +144,36 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-3  mx-auto">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2  mx-auto">
+            {DATA.megaProjects.map((project, id) => (
+              <BlurFade
+                key={project.title}
+                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+              >
+                <ProjectCard
+                  systemLink={project.systemLink}
+                  href={project.href}
+                  key={project.title}
+                  title={project.title}
+                  description={project.description}
+                  dates={project.dates}
+                  tags={project.technologies}
+                  image={project.image}
+                  video={project.video}
+                  links={project.links}
+                  hasSystemDesign={true}
+                />
+              </BlurFade>
+            ))}
+          </div>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-3  mx-auto">
             {DATA.projects.map((project, id) => (
               <BlurFade
                 key={project.title}
                 delay={BLUR_FADE_DELAY * 12 + id * 0.05}
               >
                 <ProjectCard
+                  systemLink={project.systemLink}
                   href={project.href}
                   key={project.title}
                   title={project.title}
@@ -165,14 +195,16 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  ⭐ Open Source Contribution
+                  ⭐ Open Source Contribution & Freelancing Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                I like open source and the community behind it. It fosters collaboration and innovation, empowering individuals to contribute and shape the future of technology.
-                recently i have contributed in 2 projects
+                  I like open source and the community behind it. It fosters
+                  collaboration and innovation, empowering individuals to
+                  contribute and shape the future of technology. recently i have
+                  contributed in 2 projects
                 </p>
               </div>
             </div>
@@ -186,7 +218,7 @@ export default function Page() {
                 >
                   <HackathonCard
                     title={project.title}
-                    description={project.description}
+                    description={project.description[0]}
                     location={project.location}
                     dates={project.dates}
                     image={project.image}
@@ -216,7 +248,7 @@ export default function Page() {
                 >
                   with a direct question on LinkedIn
                 </Link>{" "}
-                and I&apos;ll respond whenever I can. 
+                and I&apos;ll respond whenever I can.
               </p>
             </div>
           </BlurFade>
