@@ -199,8 +199,8 @@ export const DATA = {
       video: "/mentorlink.mp4",
     },
     {
-      title: "Scalable Realtime System",
-      href: "https://themecrafter.ompharate.tech/",
+      title: "Scalable Realtime System  ",
+      href: "https://sgame.ompharate.tech/",
       systemLink:
         "https://coral-windshield-4bf.notion.site/Scalable-Realtime-System-165a2fdc5ce480bc8910edd336462da8",
       dates: "Jan 2024 - Feb 2024",
@@ -224,7 +224,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://ballgame.ompharate.tech/",
+          href: "https://sgame.ompharate.tech/",
           icon: <Icons.globe className="size-3" />,
         },
         {
