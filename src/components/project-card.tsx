@@ -51,7 +51,7 @@ export function ProjectCard({
   return (
     <Card
       style={{
-        border: hasSystemDesign ? "1px solid #FFD700	" : "1px solid black",
+        border: hasSystemDesign ? "1px solid #211C84	" : "1px solid black",
       }}
       className={
         "flex flex-col overflow-hidden  hover:shadow-lg transition-all duration-300 ease-out h-full "
@@ -75,6 +75,8 @@ export function ProjectCard({
           <Image
             src={image}
             alt={title}
+            width={500}
+            height={300}
             className="h-40 w-full overflow-hidden object-cover object-top"
           />
         )}
@@ -92,7 +94,7 @@ export function ProjectCard({
               <div className="mt-2 flex flex-wrap gap-1">
                 {description?.map((desc) => (
                   <Badge
-                    className="px-1 py-0 text-[10px] border border-[#FFD700] text-black bg-transparent dark:bg-[#FFD700] dark:text-black"
+                    className="px-1 py-0 text-[10px] border border-[#211C84] text-black bg-transparent dark:bg-[#211C84] dark:text-white"
                     key={desc}
                   >
                     <li> {desc}</li>

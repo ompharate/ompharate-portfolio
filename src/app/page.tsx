@@ -5,13 +5,15 @@ import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { getBlogPosts } from "@/data/blog";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
 
-export default function Page() {
+export default async function Page() {
+  const blogs = await getBlogPosts();
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
@@ -48,6 +50,31 @@ export default function Page() {
             {DATA.summary}
           </Markdown>
         </BlurFade>
+      </section>
+      <section id="work">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 5}>
+            <h2 className="text-xl font-bold">Experiences</h2>
+          </BlurFade>
+          {DATA.experience.map((work, id) => (
+            <BlurFade
+              key={work.company}
+              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
+            >
+              <ResumeCard
+                key={work.company}
+                logoUrl={work.logoUrl}
+                altText={work.company}
+                title={work.company}
+                subtitle={work.title}
+                href={work.href}
+                badges={work.badges}
+                period={`${work.start} - Present`}
+                description={work.description}
+              />
+            </BlurFade>
+          ))}
+        </div>
       </section>
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
@@ -166,34 +193,76 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-3  mx-auto">
-            {DATA.projects.map((project, id) => (
+        </div>
+      </section>
+      <section id="blogs">
+        <div className="space-y-12 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 11.5}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  Latest Blogs
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  My Recent Articles
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Sharing my thoughts and experiences through writing
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+        </div>
+
+        <div className="relative">
+          <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-6 px-4 scrollbar-hide">
+            {blogs.map((blog: any, index: number) => (
               <BlurFade
-                key={project.title}
-                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                key={blog.slug}
+                delay={BLUR_FADE_DELAY * 12 + index * 0.05}
               >
-                <ProjectCard
-                  systemLink={project.systemLink}
-                  href={project.href}
-                  key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  dates={project.dates}
-                  tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
-                  links={project.links}
-                />
+                <Link href={`https://ompharate.tech/blog/${blog.slug}`} target="_blank" className="group">
+                  <div className="min-w-[350px] h-[400px] flex-shrink-0 snap-center rounded-xl overflow-hidden bg-card hover:bg-accent transition-all duration-300 transform hover:scale-[1.02]">
+                    <div className="relative h-52">
+                      <img
+                        src={blog.cover_image}
+                        alt={blog.title}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    </div>
+                    <div className="p-6 space-y-4">
+                      <div className="flex items-center gap-3">
+                        <img
+                          src={blog.user.profile_image}
+                          alt="author"
+                          className="w-10 h-10 rounded-full border-2 border-primary"
+                        />
+                        <div className="text-sm text-muted-foreground">
+                          {new Date(blog.published_at).toLocaleDateString()}
+                        </div>
+                      </div>
+                      <h3 className="font-bold text-xl line-clamp-2 group-hover:text-primary transition-colors">
+                        {blog.title}
+                      </h3>
+                      <p className="text-muted-foreground line-clamp-3">
+                        {blog.description}
+                      </p>
+                     
+                    </div>
+                  </div>
+                </Link>
               </BlurFade>
             ))}
           </div>
+          <div className="absolute left-0 right-0 bottom-0 h-16 bg-gradient-to-t from-background to-transparent pointer-events-none" />
         </div>
       </section>
       <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
+              <div className="space-y-5">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                   ⭐ Open Source Contribution & Freelancing Projects
                 </div>
