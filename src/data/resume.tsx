@@ -96,7 +96,7 @@ export const DATA = {
     { href: "https://dev.to/ompharate", icon: CodeIcon, label: "Dev.to" },
   ],
   contact: {
-    email: "ompharate31@example.com",
+    email: "ompharate31@gmail.com",
     tel: "+123456789",
     social: {
       GitHub: {
