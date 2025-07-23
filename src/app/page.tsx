@@ -85,7 +85,7 @@ export default async function Page() {
   console.log(blogs);
 
   // redirect("/maintenance");  udr later
-  return <MaintenancePage />;
+  // return <MaintenancePage />;
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
