@@ -3,12 +3,15 @@ import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
+import { OpenSourceCard } from "@/components/open-source-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { getAllPosts } from "@/actions/blog";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { redirect } from "next/navigation";
+import MaintenancePage from "./maintenance/page";
 
 const BLUR_FADE_DELAY = 0.04;
 const DATA_SYSTEM_DESIGNS = [
@@ -78,7 +81,11 @@ const DATA_SYSTEM_DESIGNS = [
 
 export default async function Page() {
   const blogs = await getAllPosts();
+  
   console.log(blogs);
+
+  // redirect("/maintenance");  udr later
+  return <MaintenancePage />;
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
@@ -141,40 +148,33 @@ export default async function Page() {
           ))}
         </div>
       </section>
-      <section id="work">
+      <section id="open-source">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Open Source Contributions</h2>
           </BlurFade>
-          {DATA.work.map((work, id) => (
-            <BlurFade
-              key={work.company}
-              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
-            >
-              <ResumeCard
-                key={work.company}
-                logoUrl={work.logoUrl}
-                altText={work.company}
-                title={work.company}
-                subtitle={work.title}
-                href={work.href}
-                badges={work.badges}
-                period={`${work.start} - ${work.end ?? "Present"}`}
-                description={work.description}
-              />
-            </BlurFade>
-          ))}
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {DATA.openSourceContributions.map((contribution, id) => (
+              <BlurFade
+                key={contribution.organization}
+                delay={BLUR_FADE_DELAY * 6 + id * 0.05}
+              >
+                <OpenSourceCard contribution={contribution} />
+              </BlurFade>
+            ))}
+          </div>
         </div>
       </section>
+
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 7}>
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">Education</h2>
           </BlurFade>
           {DATA.education.map((education, id) => (
             <BlurFade
               key={education.school}
-              delay={BLUR_FADE_DELAY * 8 + id * 0.05}
+              delay={BLUR_FADE_DELAY * 10 + id * 0.05}
             >
               <ResumeCard
                 key={education.school}
@@ -191,14 +191,14 @@ export default async function Page() {
       </section>
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1 justify-center">
             {DATA.skills.map((skill, id) => (
               <BlurFade
                 key={skill.name}
-                delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
               >
                 <Badge className="w-32 h-10 gap-2" key={skill.name}>
                   {" "}
@@ -219,7 +219,7 @@ export default async function Page() {
 
       <section id="projects">
         <div className="space-y-12 w-full   py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
@@ -240,7 +240,7 @@ export default async function Page() {
             {DATA.megaProjects.map((project, id) => (
               <BlurFade
                 key={project.title}
-                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                delay={BLUR_FADE_DELAY * 14 + id * 0.05}
               >
                 <ProjectCard
                   systemLink={project.systemLink}
@@ -287,7 +287,7 @@ export default async function Page() {
                 delay={BLUR_FADE_DELAY * 12 + index * 0.05}
               >
                 <Link
-                  href={`https://ompharate.tech/blog/${blog.slug}`}
+                  href={`https://ompharate.me/blog/${blog.slug}`}
                   target="_blank"
                   className="group"
                 >

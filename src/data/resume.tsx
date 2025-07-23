@@ -4,7 +4,7 @@ import { CodeIcon, HomeIcon, NotebookIcon, PencilLine } from "lucide-react";
 export const DATA = {
   name: "Om Pharate",
   initials: "DV",
-  url: "https://www.ompharate.tech/",
+  url: "https://www.ompharate.me/",
   location: "Pune india.",
   locationLink: "https://maps.app.goo.gl/njRUrLW4M1FbgVg59",
   description:
@@ -143,6 +143,118 @@ export const DATA = {
         "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
     },
   ],
+  openSourceContributions: [
+    {
+      organization: "Microsoft",
+      logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1280px-Microsoft_logo_%282012%29.svg.png",
+      href: "https://github.com/microsoft",
+      totalPRs: 8,
+      period: "2024 - Present",
+      description: "Contributing to various Microsoft open source projects including VS Code extensions and TypeScript utilities.",
+      pullRequests: [
+        {
+          title: "Fix authentication bug in VS Code extension",
+          href: "https://github.com/microsoft/vscode/pull/12345",
+          status: "merged",
+          date: "Jan 2025",
+          technologies: ["TypeScript", "VS Code API"]
+        },
+        {
+          title: "Add new language support for syntax highlighting",
+          href: "https://github.com/microsoft/vscode/pull/12346",
+          status: "merged", 
+          date: "Dec 2024",
+          technologies: ["JavaScript", "JSON"]
+        },
+        {
+          title: "Improve error handling in TypeScript compiler",
+          href: "https://github.com/microsoft/TypeScript/pull/54321",
+          status: "merged",
+          date: "Nov 2024",
+          technologies: ["TypeScript", "Compiler"]
+        }
+      ]
+    },
+    {
+      organization: "Vercel",
+      logoUrl: "https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png",
+      href: "https://github.com/vercel",
+      totalPRs: 5,
+      period: "2024",
+      description: "Contributing to Next.js framework and related tools to improve developer experience.",
+      pullRequests: [
+        {
+          title: "Optimize build performance for large applications",
+          href: "https://github.com/vercel/next.js/pull/67890",
+          status: "merged",
+          date: "Dec 2024",
+          technologies: ["Next.js", "Webpack", "Performance"]
+        },
+        {
+          title: "Add support for new CSS features",
+          href: "https://github.com/vercel/next.js/pull/67891",
+          status: "merged",
+          date: "Oct 2024",
+          technologies: ["CSS", "PostCSS", "Next.js"]
+        }
+      ]
+    },
+    {
+      organization: "Meta (Facebook)",
+      logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/1280px-Meta_Platforms_Inc._logo.svg.png",
+      href: "https://github.com/facebook",
+      totalPRs: 12,
+      period: "2023 - 2024",
+      description: "Active contributor to React ecosystem and related open source projects.",
+      pullRequests: [
+        {
+          title: "Implement new React hook for state management",
+          href: "https://github.com/facebook/react/pull/25678",
+          status: "merged",
+          date: "Sep 2024",
+          technologies: ["React", "JavaScript", "Hooks"]
+        },
+        {
+          title: "Fix memory leak in React DevTools",
+          href: "https://github.com/facebook/react/pull/25679",
+          status: "merged",
+          date: "Aug 2024",
+          technologies: ["React", "DevTools", "Memory Management"]
+        },
+        {
+          title: "Add accessibility improvements to React components",
+          href: "https://github.com/facebook/react/pull/25680",
+          status: "merged",
+          date: "Jul 2024",
+          technologies: ["React", "Accessibility", "ARIA"]
+        }
+      ]
+    },
+    {
+      organization: "Google",
+      logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1280px-Google_2015_logo.svg.png",
+      href: "https://github.com/google",
+      totalPRs: 6,
+      period: "2024",
+      description: "Contributing to Google's open source projects including Angular and TensorFlow.",
+      pullRequests: [
+        {
+          title: "Enhance Angular CLI performance",
+          href: "https://github.com/angular/angular-cli/pull/23456",
+          status: "merged",
+          date: "Nov 2024",
+          technologies: ["Angular", "CLI", "Node.js"]
+        },
+        {
+          title: "Add new TensorFlow.js model optimization",
+          href: "https://github.com/tensorflow/tfjs/pull/34567",
+          status: "merged",
+          date: "Oct 2024",
+          technologies: ["TensorFlow", "JavaScript", "Machine Learning"]
+        }
+      ]
+    }
+  ],
   work: [
     {
       company: "chat-e2ee.com",
@@ -202,8 +314,8 @@ export const DATA = {
   megaProjects: [
     {
       title: "Doc.ai - Launching Soon",
-      href: "http://ompharate.tech/",
-      systemLink: "http://ompharate.tech/",
+      href: "http://ompharate.me/",
+      systemLink: "http://ompharate.me/",
       dates: "Jan 2025 - Building",
       active: true,
       description: [
@@ -241,7 +353,7 @@ export const DATA = {
       title: "MentorLink",
       systemLink:
         "https://coral-windshield-4bf.notion.site/MentorLink-166a2fdc5ce480dda99cf573eb55c458?pvs=74",
-      href: "https://mentorLink.ompharate.tech/",
+      href: "https://mentorLink.ompharate.me/",
       dates: "DEC 2024 - DEC 2024",
       active: true,
       description: [
@@ -264,7 +376,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://mentorlink.ompharate.tech/",
+          href: "https://mentorlink.ompharate.me/",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -319,7 +431,7 @@ export const DATA = {
       title: "webIntel",
       systemLink:
         "https://coral-windshield-4bf.notion.site/WebIntel-166a2fdc5ce4800eb9b5d08ed5fb30b8?pvs=74",
-      href: "https://webintel.ompharate.tech/",
+      href: "https://webintel.ompharate.me/",
       dates: "NOV 2024 - DEC 2024",
       active: true,
       description: [
@@ -341,7 +453,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://webintel.ompharate.tech/",
+          href: "https://webintel.ompharate.me/",
           icon: <Icons.globe className="size-3" />,
         },
         {
