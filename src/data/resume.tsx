@@ -1,5 +1,10 @@
 import { Icons } from "@/components/icons";
-import { CodeIcon, HomeIcon, NotebookIcon, PencilLine } from "lucide-react";
+import {
+  HomeIcon,
+  Youtube,
+  Codepen,
+  Mail,
+} from "lucide-react";
 
 export const DATA = {
   name: "Om Pharate",
@@ -8,9 +13,9 @@ export const DATA = {
   location: "Pune india.",
   locationLink: "https://maps.app.goo.gl/njRUrLW4M1FbgVg59",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Github.",
+    "Backend Engineer - Building scalable systems.",
   summary:
-    "Currently, I am a third-year Computer Science Engineering student at [I2IT Pune](https://www.isquareit.edu.in/), passionate about building innovative software solutions. I am also actively involved in [open source contributions](https://github.com/ompharate) and have a proven ability to learn new technologies and continuously strive to enhance my skills and knowledge.",
+    "I'm a Software Engineer and a final-year Computer Engineering student at the International Institute of Information Technology (I²IT), Pune.\n 🔭 I’m currently building Voxora.\n⚡ I love building real-time systems and scalable backend infrastructure.",
   avatarUrl: "/me.jpg",
   skills: [
     {
@@ -21,17 +26,23 @@ export const DATA = {
       name: "Next.js",
       url: "https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png",
     },
-    {
-      name: "GraphQL",
-      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMwyF9jqTzoCr79rP7GKWu_ZYEpFl_5fhoQg&s",
-    },
-    {
-      name: "Prisma ORM",
-      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIDkN92cpPFFg-3j4q7khMCH_nTnUC_wYhQg&s",
-    },
+   
+   
     {
       name: "TypeScript",
       url: "https://media.licdn.com/dms/image/D5612AQF1X3R7A10-GA/article-cover_image-shrink_720_1280/0/1696269587807?e=2147483647&v=beta&t=RezCmM0hMmBFdllWBKTmYA7hpmvTbBKjP8DSmV8cnUQ",
+    },
+    {
+      name:"Python",
+      url: "data:image/webp;base64,UklGRiYCAABXRUJQVlA4WAoAAAAQAAAAGwAAGwAAQUxQSL0AAAARZ6AmAAg2psDefCIiYLeQy+45A1CzbVu23L9rMyBTvZOsuSa3L+HOAA4L2AhuyV2vrV7hHyGi/xMgs36yPyf3B0CFow5ryDZni/0jXpq67e1tV+e2CWxsl0k/OG+51xw+JJ79Mi8eH5B9c019Q9UHcBwEQbABNBjLBwcHB39A6xtM/eCseoYB3NkLWPdIjfhF9OOzL9X1LcJ9S3NzX19EkuaAu7u/mKwGUKJOW8SmH2Nfzs5fOIm5pMZKWQEAVlA4IEIBAABwBwCdASocABwAPp0gp1OloSWlmACwE4lsAJ0yhHUHrvDua0Ng8MD0MbwBvIgTF4+KB6g+zwUkvfyiS4p5PXpQf3tKgAD+uSvIT6dzxxG+YVoE9/4/w8uY4DNvZDRIRLNUsFDtXaiZkTAFYJVNPWXYH/98oFKs9e5AkwiJMbJ4424mkkvsAq3r/JP+nW/6N/+BS5tBQ2BCmPeT1/+kUS9vczg+e+3YZFaQYUh4tUZgl1cpRMvuX7ixUeSMR4FXzPOL7U6VMElTNJ95S/uJR/znG/11Tchi/1xf2B6w7PZzlaKp9ZeVR+V29EHHTo5N//0tTZ4rmV+lRv4BOnLaBgXV7/v6Fil7uasc8qWVO83MgvLSVTF9Bacy4xefR7CZO6eHurPrDHJPSo20fMHsBxssj+acKbXsGHmTQIiPfx3+I2AA"
+    },
+    {
+      name: "Go",
+      url: "data:image/webp;base64,UklGRloBAABXRUJQVlA4IE4BAABQBwCdASocABwAPp0gp1OloSWlmACwE4lsAJ0yg8zmTbzG2AsAAeg/5+9gDdAB4F/GD0fZ0a7HB1qmIuzNiDwe70KAAP7YU7fHn5l11lxxw88qa0p1Wfe/xSZUbz65Eruk9GDQTs46R/0+R9WJ+R+kYc4z8rB8CHpfWgY1BZ/v4+p9eOFJJf1tNkMUz2yL21Oz48PZ4BVbZxh6SZYtpXyeevpli6jmryo3vQHsObUjEymsZfPdoxLjMzaUE2m7ilCM6X/fX45yokl/FCJIfhPAETDDoGTg1kttOvA2x+vemUrZaqU/fey6G3D0pJcWvx7/6IyJ/fTPVo3syun/mMEClWv2ipx0lkdahyKripLzyHeKxUtKZM7QldPDwtxEWRWN8yhHamYj63ux9b/h/gyE8GiyDfrGVr0xvgSSRSL2ELhVhRqZeJYUamWKAAAA"
+    },
+    {
+      name:"Distributed Systems",
+      url: "https://cdn.prod.website-files.com/65c0cd3f2acb33427e35b1f6/6756ce0d5d78374d1f0a0a7f_Distributed%2520Systems%2520in%2520Action%201.jpg"
     },
     {
       name: "FastApi",
@@ -66,6 +77,10 @@ export const DATA = {
       url: "https://pbs.twimg.com/profile_images/1758141568970878976/fM5FlvD3_400x400.jpg",
     },
     {
+      name:"Langgraph",
+      url: "data:image/webp;base64,UklGRjQBAABXRUJQVlA4ICgBAABwBwCdASocABwAPp0up1OloaWllACwE4lAF+eedW19nrdmfcA/TfoQPYA/SAOzWbLNIcN1U2pjUFdHGz7BnjX2cgCnAAD+8phfX3wWcGWgqc0NPi092zCGgN7ye886I4rCRi1+7a/Z+9C+LepiP3ttMfjUsP707leqdRq+NEZvzm8dE3MYwL3pKoH1nvG4KTJj3fFP92tPQm9yjIl7lKesBRQd43+l3iT3fb4wkQIdFh3LgN/SIRruzGyJJ0yKPJ+zVJw8t1zUpt+El/eQJJS1A1ox2VrDphdpVCk05IyPr/HSM7C3GqM9LwkWDpiEUNis3uQTDcPrwxtLLJji2o5bpghIfSIhttdjjoeo/gxMpMSb0qIOOrjFxYKKLbrov8IDJfzgOCgAAA=="
+    },
+    {
       name: "Microservices",
       url: "https://w1.pngwing.com/pngs/535/256/png-transparent-microservices-text-computer-software-line-circle-area-diagram-symmetry-organization-thumbnail.png",
     },
@@ -92,8 +107,13 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    { href: "https://dev.to/ompharate", icon: CodeIcon, label: "Dev.to" },
+    {
+      href: "https://youtube.com/@ompharate-code?si=LafLZeNaYr9vkz3-",
+      icon: Youtube,
+      label: "YouTube",
+    },
+    { href: "https://github.com/voxora-cloud", icon: Codepen, label: "Voxora" },
+    { href: "mailto:ompharate31@gmail.com", icon: Mail, label: "Email" },
   ],
   contact: {
     email: "ompharate31@gmail.com",
@@ -142,157 +162,156 @@ export const DATA = {
       description:
         "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
     },
+    {
+      company: "Voxora",
+      badges: [],
+      href: "https://github.com/voxora-cloud",
+      location: "Remote",
+      title: "CoFounder and Lead Developer",
+      logoUrl: "https://avatars.githubusercontent.com/u/222506196?s=200&v=4",
+      start: "July 2025",
+      description:
+        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
+    },
   ],
   openSourceContributions: [
     {
-      organization: "Microsoft",
-      logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1280px-Microsoft_logo_%282012%29.svg.png",
-      href: "https://github.com/microsoft",
-      totalPRs: 8,
-      period: "2024 - Present",
-      description: "Contributing to various Microsoft open source projects including VS Code extensions and TypeScript utilities.",
-      pullRequests: [
-        {
-          title: "Fix authentication bug in VS Code extension",
-          href: "https://github.com/microsoft/vscode/pull/12345",
-          status: "merged",
-          date: "Jan 2025",
-          technologies: ["TypeScript", "VS Code API"]
-        },
-        {
-          title: "Add new language support for syntax highlighting",
-          href: "https://github.com/microsoft/vscode/pull/12346",
-          status: "merged", 
-          date: "Dec 2024",
-          technologies: ["JavaScript", "JSON"]
-        },
-        {
-          title: "Improve error handling in TypeScript compiler",
-          href: "https://github.com/microsoft/TypeScript/pull/54321",
-          status: "merged",
-          date: "Nov 2024",
-          technologies: ["TypeScript", "Compiler"]
-        }
-      ]
-    },
-    {
-      organization: "Vercel",
-      logoUrl: "https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png",
-      href: "https://github.com/vercel",
-      totalPRs: 5,
-      period: "2024",
-      description: "Contributing to Next.js framework and related tools to improve developer experience.",
-      pullRequests: [
-        {
-          title: "Optimize build performance for large applications",
-          href: "https://github.com/vercel/next.js/pull/67890",
-          status: "merged",
-          date: "Dec 2024",
-          technologies: ["Next.js", "Webpack", "Performance"]
-        },
-        {
-          title: "Add support for new CSS features",
-          href: "https://github.com/vercel/next.js/pull/67891",
-          status: "merged",
-          date: "Oct 2024",
-          technologies: ["CSS", "PostCSS", "Next.js"]
-        }
-      ]
-    },
-    {
-      organization: "Meta (Facebook)",
-      logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/1280px-Meta_Platforms_Inc._logo.svg.png",
-      href: "https://github.com/facebook",
-      totalPRs: 12,
-      period: "2023 - 2024",
-      description: "Active contributor to React ecosystem and related open source projects.",
-      pullRequests: [
-        {
-          title: "Implement new React hook for state management",
-          href: "https://github.com/facebook/react/pull/25678",
-          status: "merged",
-          date: "Sep 2024",
-          technologies: ["React", "JavaScript", "Hooks"]
-        },
-        {
-          title: "Fix memory leak in React DevTools",
-          href: "https://github.com/facebook/react/pull/25679",
-          status: "merged",
-          date: "Aug 2024",
-          technologies: ["React", "DevTools", "Memory Management"]
-        },
-        {
-          title: "Add accessibility improvements to React components",
-          href: "https://github.com/facebook/react/pull/25680",
-          status: "merged",
-          date: "Jul 2024",
-          technologies: ["React", "Accessibility", "ARIA"]
-        }
-      ]
-    },
-    {
-      organization: "Google",
-      logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1280px-Google_2015_logo.svg.png",
-      href: "https://github.com/google",
-      totalPRs: 6,
-      period: "2024",
-      description: "Contributing to Google's open source projects including Angular and TensorFlow.",
-      pullRequests: [
-        {
-          title: "Enhance Angular CLI performance",
-          href: "https://github.com/angular/angular-cli/pull/23456",
-          status: "merged",
-          date: "Nov 2024",
-          technologies: ["Angular", "CLI", "Node.js"]
-        },
-        {
-          title: "Add new TensorFlow.js model optimization",
-          href: "https://github.com/tensorflow/tfjs/pull/34567",
-          status: "merged",
-          date: "Oct 2024",
-          technologies: ["TensorFlow", "JavaScript", "Machine Learning"]
-        }
-      ]
-    }
-  ],
-  work: [
-    {
-      company: "chat-e2ee.com",
-      badges: [],
-      href: "https://github.com/muke1908/chat-e2ee/pull/399",
-      location: "Remote",
-      title: "Nodejs & React",
-      logoUrl: "https://chat-e2ee-2.azurewebsites.net/favicon.png",
-      start: "Jan 2025",
-      end: "Jan 2025",
+      organization: "Formbricks",
+      logoUrl:
+        "https://pipedream.com/s.v0/app_Noh9eD/logo/orig",
+      href: "https://github.com/formbricks/formbricks",
+      totalPRs: 3,
+      period: "2025 - Present",
       description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
+        "Contributing to various Formbricks open source projects including VS Code extensions and TypeScript utilities.",
+      pullRequests: [
+        {
+          title: "fix: render copy link button based on single use survey",
+          href: "https://github.com/formbricks/formbricks/pull/6458",
+          status: "merged",
+          date: "Aug 2025",
+          technologies: ["TypeScript", "React"],
+        },
+        {
+          title: "Prevent email verification checks in preview mode",
+          href: "https://github.com/formbricks/formbricks/pull/6309",
+          status: "merged",
+          date: "July 2025",
+          technologies: ["JavaScript", "JSON"],
+        },
+        {
+          title: "fix(tooltip): wrap TooltipContent in a Portal for improved rendering ",
+          href: "https://github.com/formbricks/formbricks/pull/6458",
+          status: "open",
+          date: "Aug 2025",
+          technologies: ["TypeScript", "React"],
+        }
+      ],
     },
     {
-      company: "Linkshub.Dev",
-      href: "https://github.com/rupali-codes/LinksHub/pull/2413",
-      badges: [],
-      location: "Remote",
-      title: "NextJs Tailwindcss",
-      logoUrl: "/linkshub.png",
-      start: "July 2024",
-      end: "July 2024",
+      organization: "Github's Primer",
+      logoUrl:
+        "https://avatars.githubusercontent.com/u/7143434?s=48&v=4",
+      href: "https://github.com/primer/react",
+      totalPRs: 1,
+      period: "2025 - Present",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+        "Contributing to various Primer open source projects including VS Code extensions and TypeScript utilities.",
+      pullRequests: [
+        {
+          title: "fix: render copy link button based on single use survey",
+          href: "https://github.com/primer/react/pull/6341",
+          status: "merged",
+          date: "July 2025",
+          technologies: ["TypeScript", "React"],
+        },
+      ],
+    },
+        {
+      organization: "Logchimp",
+      logoUrl:
+        "https://avatars.githubusercontent.com/u/45693574?s=48&v=4",
+      href: "https://github.com/logchimp/logchimp",
+      totalPRs: 1,
+      period: "2025 - Present",
+      description:
+        "Contributing to various Logchimp open source projects including VS Code extensions and TypeScript utilities.",
+      pullRequests: [
+        {
+          title: "feat: add modal for creating posts",
+          href: "https://github.com/logchimp/logchimp/pull/1106",
+          status: "open",
+          date: "AUG 2025",
+          technologies: ["TypeScript", "React"],
+        },
+         {
+          title: "feat: add user info dialog and route for fetching user details",
+          href: "https://github.com/logchimp/logchimp/pull/1100",
+          status: "open",
+          date: "AUG 2025",
+          technologies: ["TypeScript", "React"],
+        },
+      ],
+    },
+   {
+      organization: "Codecademy/docs",
+      logoUrl:
+        "https://avatars.githubusercontent.com/u/1463944?s=200&v=4",
+      href: "https://github.com/Codecademy/docs",
+      totalPRs: 1,
+      period: "2025 - Present",
+      description:
+        "Contributing to various Codecademy/docs open source projects including VS Code extensions and TypeScript utilities.",
+      pullRequests: [
+        {
+          title: "[Term Entry] PyTorch Tensors: .randn()",
+          href: "https://github.com/Codecademy/docs/pull/4956",
+          status: "merged",
+          date: "AUG 2025",
+          technologies: ["TypeScript", "React"],
+        },
+      ],
+    },
+     {
+      organization: "chat-e2ee",
+      logoUrl:
+        "https://chat-e2ee-2.azurewebsites.net/favicon.png",
+      href: "https://github.com/chat-e2ee",
+      totalPRs: 1,
+      period: "2025 - Present",
+      description:
+        "Contributing to various Codecademy/docs open source projects including VS Code extensions and TypeScript utilities.",
+      pullRequests: [
+        {
+          title: "Fix/sdk issues",
+          href: "https://github.com/muke1908/chat-e2ee/pull/399",
+          status: "merged",
+          date: "AUG 2025",
+          technologies: ["TypeScript", "Express"],
+        },
+      ],
     },
     {
-      company: "codecademy.com",
-      badges: [],
-      href: "https://github.com/Codecademy/docs/pull/4956",
-      location: "Remote",
-      title: "NextJs & React",
-      logoUrl: "/codecademy.webp",
-      start: "Aug 2024",
-      end: "Sep 2024",
+      organization: "LinksHub",
+      logoUrl:
+        "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      href: "https://github.com/rupali-codes/LinksHub",
+      totalPRs: 1,
+      period: "2025 - Present",
       description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
+        "Contributing to various Codecademy/docs open source projects including VS Code extensions and TypeScript utilities.",
+      pullRequests: [
+        {
+          title: "Fix/sdk issues",
+          href: "https://github.com/rupali-codes/LinksHub/pull/2413",
+          status: "merged",
+          date: "AUG 2025",
+          technologies: ["TypeScript", "Express"],
+        },
+      ],
     },
   ],
+
   education: [
     {
       school: "International Institute of Information Technology Pune.",
@@ -313,85 +332,49 @@ export const DATA = {
   ],
   megaProjects: [
     {
-      title: "Doc.ai - Launching Soon",
-      href: "http://ompharate.me/",
-      systemLink: "http://ompharate.me/",
-      dates: "Jan 2025 - Building",
+      title: "Voxora - Open Source AI Live Support",
+      href: "https://voxora.cloud/",
+      systemLink: "https://coral-windshield-4bf.notion.site/Voxora-Open-Source-25ca2fdc5ce480b28d54fc9860cff1c3?pvs=73",
+      dates: "Aug 2025 - Building",
       active: true,
       description: [
-        "Built scalable ECS cluster with auto-scaling",
-        "Reduced API latency by 65% using Redis cache",
-        "Set up CloudFront CDN for static assets",
-        "Achieved 99.9% uptime with ECS service mesh",
+        "Built a scalable WebSocket & WebRTC backend for real-time chat and voice support",
+        "Integrated LLM-powered AI assistant with live context handling",
+        "Implemented Dockerized microservices and deployed on AWS with auto-scaling",
+        "Enabled seamless AI + human handoff with <100ms latency",
       ],
       technologies: [
-        "Nodejs",
-        "OpenAi",
-        "Nextjs",
+        "Next.js",
+        "Node.js",
+        "WebRTC",
+        "WebSockets",
+        "Docker",
         "AWS ECS",
-        "Load Balancer",
         "Redis",
-        "AWS S3",
         "Prisma ORM",
-      ],
-      links: [
-        {
-          type: "Coming Soon",
-          href: "#",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Coming Soon",
-          href: "#",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "https://i.ibb.co/byFx7st/docai.png",
-      video: undefined,
-    },
-    {
-      title: "MentorLink",
-      systemLink:
-        "https://coral-windshield-4bf.notion.site/MentorLink-166a2fdc5ce480dda99cf573eb55c458?pvs=74",
-      href: "https://mentorLink.ompharate.me/",
-      dates: "DEC 2024 - DEC 2024",
-      active: true,
-      description: [
-        "Robust User authentication",
-        "Reliable chat system",
-        "Video Call integration",
-        "Handled Payments",
-        "Optimistic ui",
-      ],
-      technologies: [
-        "Node Js",
-        "Typescript",
-        "Express",
-        "Mongodb",
-        "Prisma",
-        "TailwindCSS",
-        "oauth2",
-        "Razorpay",
+        "PostgreSQL",
+        "OpenAI",
       ],
       links: [
         {
           type: "Website",
-          href: "https://mentorlink.ompharate.me/",
+          href: "https://voxora.cloud/",
           icon: <Icons.globe className="size-3" />,
         },
         {
-          type: "Source",
-          href: "https://github.com/ompharate/mentorLink.git",
+          type: "GitHub",
+          href: "https://github.com/voxora-cloud",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "/mentorlink.mp4",
+      image:
+        "https://i.ibb.co/mVbTzwnV/Whats-App-Image-2025-08-07-at-00-21-02-1.jpg", // replace with real screenshot later
+      video: undefined,
     },
     {
       title: "MagicStocks.ai",
       systemLink:
-        "https://coral-windshield-4bf.notion.site/MagicStocks-ai-166a2fdc5ce480b9b57ef854de62fa41",
+        "https://coral-windshield-4bf.notion.site/MagicStocks-ai-166a2fdc5ce480b9b57ef854de62fa41?pvs=74",
       href: "https://magicstocks.ai/",
       dates: "NOV 2024 - NOV 2024",
       active: true,
@@ -426,116 +409,82 @@ export const DATA = {
       image: "",
       video: "/magicstocks.mp4",
     },
-
-    {
-      title: "webIntel",
-      systemLink:
-        "https://coral-windshield-4bf.notion.site/WebIntel-166a2fdc5ce4800eb9b5d08ed5fb30b8?pvs=74",
-      href: "https://webintel.ompharate.me/",
-      dates: "NOV 2024 - DEC 2024",
-      active: true,
-      description: [
-        "Gen ai project",
-        "Secure authentication",
-        "Integrated with Razorpay",
-        "User-friendly experience",
-        "Gemini Integration",
-      ],
-      technologies: [
-        "NextJs",
-        "oauth2",
-        "Google Gemini Integration",
-        "Mongodb",
-        "TailwindCSS",
-        "Redis",
-        "Razorpay",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://webintel.ompharate.me/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/ompharate/webIntel.git",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "/webintel.mp4",
-    },
   ],
 
-  hackathons: [
-    {
-      title: "MagicStocks.ai",
-      dates: "NOV 2024",
-      location: "Startup - Freelancing",
-      description: [
-        "Developed a web application that leverages the ChatGPT algorithm to provide answers to stock market-related questions based on real-time stock market data",
-      ],
-      image: "/magicstocks.webp",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [
-        {
-          title: "Link",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://magicstocks.ai/",
-        },
-      ],
-    },
-    {
-      title: "LinksHub.dev",
-      dates: "July 2024",
-      location: "Website",
-      description: [
-        "contributed a new feature to LinkHub.dev, adding a dynamic hover effect to the landing page cards.",
-      ],
-      image: "/linkshub.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [
-        {
-          title: "Link",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://www.linkshub.dev/",
-        },
-      ],
-    },
-    {
-      title: "Codecademy.com",
-      dates: "Aug 2024",
-      location: "Online interactive platform",
-      description: [
-        "made a significant contribution to Codecademy's documentation by adding detailed tutorials on Python and PyTorch.",
-      ],
-      image: "/codecademy.webp",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [
-        {
-          title: "Link",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://www.codecademy.com/",
-        },
-      ],
-    },
-    {
-      title: "chat-e2ee.com",
-      dates: "Jan 2025",
-      location:
-        "Secure, end-to-end encrypted environment for exchanging sensitive information with peer.",
-      description: [
-        "Enabled frontend flexibility by removing restrictive fields and improved clarity with generateHash for better maintainability.",
-      ],
-      image: "https://chat-e2ee-2.azurewebsites.net/favicon.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [
-        {
-          title: "Link",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://chat-e2ee-2.azurewebsites.net/",
-        },
-      ],
-    },
-  ],
+  articles: {
+    hld: [
+      {
+        title: "Designing a URL Shortener at Scale (TinyURL/Bit.ly)",
+        description:
+          "Deep dive into designing a URL shortening service that can handle billions of URLs with high availability.",
+        publishedDate: "Dec 2025",
+        readTime: "8 min read",
+        tags: ["System Design", "Microservices", "WebSockets", "Redis"],
+        href: "https://coral-windshield-4bf.notion.site/Url-Shortener-254a2fdc5ce48093b256f46747ede2c1?pvs=74",
+        featured: false,
+      },
+      {
+        title: "Designing a LeetCode System",
+        description:
+          "Learn how to design an online coding platform like LeetCode with features such as problem management, online judge, code execution, leaderboards, and scalability.",
+        publishedDate: "Nov 2025",
+        readTime: "12 min read",
+        tags: ["System Design", "Scalability", "Databases", "Online Judge"],
+        href: "https://coral-windshield-4bf.notion.site/Leetcode-System-Design-255a2fdc5ce48041bb75e4a7c81202c4?pvs=74",
+        featured: true,
+      },
+      {
+        title: "Designing Twitter",
+        description:
+          "Complete system design for building a social media platform like Twitter with features like tweet creation, user timelines, and real-time notifications.",
+        publishedDate: "Oct 2025",
+        readTime: "10 min read",
+        tags: ["System Design", "Databases", "Caching", "Load Balancing"],
+        href: "https://dev.to/ompharate/twitter-system-design-5bi4",
+        featured: true,
+      },
+      {
+        title: "Designing a Serverless Chat Application",
+        description:
+          "Learn how to design a scalable serverless chat application with features like real-time messaging, user presence, message persistence, and push notifications using serverless architecture.",
+        publishedDate: "Oct 2025",
+        readTime: "10 min read",
+        tags: ["System Design", "Serverless", "Real-time", "Messaging"],
+        href: "https://dev.to/ompharate/chat-application-architecture-aws-api-gateway-websockets-microservices-system-design-39a6",
+        featured: false,
+      },
+    ],
+    lld: [
+      {
+        title: "Designing a parking lot system",
+        description:
+          "Complete implementation of the parking lot system with real-world examples and best practices.",
+        publishedDate: "Jan 2025",
+        readTime: "6 min read",
+        tags: ["Design Patterns", "Single Responsibility Principle", "OOP"],
+        href: "https://coral-windshield-4bf.notion.site/Design-Parking-Lot-257a2fdc5ce48012b0ccef34b5ff2ec7?pvs=73",
+        featured: false,
+      },
+       {
+        title: "Design LinkedIn LLD",
+        description:
+          "Complete implementation of the LinkedIn system with real-world examples and best practices.",
+        publishedDate: "Jan 2025",
+        readTime: "6 min read",
+        tags: ["Design Patterns", "TypeScript","SOLID", "OOP"],
+        href: "https://coral-windshield-4bf.notion.site/Design-LinkedIn-LLD-25ca2fdc5ce4808da648c103c6536d09?pvs=74",
+        featured: false,
+      },
+       {
+        title: "LRU Cache LLD",
+        description:
+          "Complete implementation of the LRU Cache system with real-world examples and best practices.",
+        publishedDate: "Jan 2025",
+        readTime: "6 min read",
+        tags: ["Hash Map", "Doubly Linked List", "TypeScript", "OOP"],
+        href: "https://coral-windshield-4bf.notion.site/LRU-Cache-LLD-25ca2fdc5ce480e9bc82f2357ba3a395?pvs=74",
+        featured: false,
+      },
+    ],
+  },
 } as const;
