@@ -187,7 +187,7 @@ export const DATA = {
       pullRequests: [
         {
           title: "fix: render copy link button based on single use survey",
-          href: "https://github.com/formbricks/formbricks/pull/6458",
+          href: "https://github.com/formbricks/formbricks/pull/6288",
           status: "merged",
           date: "Aug 2025",
           technologies: ["TypeScript", "React"],
@@ -219,7 +219,7 @@ export const DATA = {
         "Contributing to various Primer open source projects including VS Code extensions and TypeScript utilities.",
       pullRequests: [
         {
-          title: "fix: render copy link button based on single use survey",
+          title: "fix: made textInput extra props optional",
           href: "https://github.com/primer/react/pull/6341",
           status: "merged",
           date: "July 2025",
