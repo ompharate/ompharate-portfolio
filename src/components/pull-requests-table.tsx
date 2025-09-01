@@ -177,9 +177,9 @@ export function PullRequestsTable({ contributions }: Props) {
           <span>
             {totalPRs} total contributions across {contributions.length} organizations
           </span>
-          <span>
+          {/* <span>
             {Math.round((totalMerged / totalPRs) * 100)}% merge rate
-          </span>
+          </span> */}
         </div>
       </div>
     </Card>

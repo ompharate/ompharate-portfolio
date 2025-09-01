@@ -36,9 +36,13 @@ export const DATA = {
       name:"Python",
       url: "data:image/webp;base64,UklGRiYCAABXRUJQVlA4WAoAAAAQAAAAGwAAGwAAQUxQSL0AAAARZ6AmAAg2psDefCIiYLeQy+45A1CzbVu23L9rMyBTvZOsuSa3L+HOAA4L2AhuyV2vrV7hHyGi/xMgs36yPyf3B0CFow5ryDZni/0jXpq67e1tV+e2CWxsl0k/OG+51xw+JJ79Mi8eH5B9c019Q9UHcBwEQbABNBjLBwcHB39A6xtM/eCseoYB3NkLWPdIjfhF9OOzL9X1LcJ9S3NzX19EkuaAu7u/mKwGUKJOW8SmH2Nfzs5fOIm5pMZKWQEAVlA4IEIBAABwBwCdASocABwAPp0gp1OloSWlmACwE4lsAJ0yhHUHrvDua0Ng8MD0MbwBvIgTF4+KB6g+zwUkvfyiS4p5PXpQf3tKgAD+uSvIT6dzxxG+YVoE9/4/w8uY4DNvZDRIRLNUsFDtXaiZkTAFYJVNPWXYH/98oFKs9e5AkwiJMbJ4424mkkvsAq3r/JP+nW/6N/+BS5tBQ2BCmPeT1/+kUS9vczg+e+3YZFaQYUh4tUZgl1cpRMvuX7ixUeSMR4FXzPOL7U6VMElTNJ95S/uJR/znG/11Tchi/1xf2B6w7PZzlaKp9ZeVR+V29EHHTo5N//0tTZ4rmV+lRv4BOnLaBgXV7/v6Fil7uasc8qWVO83MgvLSVTF9Bacy4xefR7CZO6eHurPrDHJPSo20fMHsBxssj+acKbXsGHmTQIiPfx3+I2AA"
     },
+    // {
+    //   name: "Go",
+    //   url: "data:image/webp;base64,UklGRloBAABXRUJQVlA4IE4BAABQBwCdASocABwAPp0gp1OloSWlmACwE4lsAJ0yg8zmTbzG2AsAAeg/5+9gDdAB4F/GD0fZ0a7HB1qmIuzNiDwe70KAAP7YU7fHn5l11lxxw88qa0p1Wfe/xSZUbz65Eruk9GDQTs46R/0+R9WJ+R+kYc4z8rB8CHpfWgY1BZ/v4+p9eOFJJf1tNkMUz2yL21Oz48PZ4BVbZxh6SZYtpXyeevpli6jmryo3vQHsObUjEymsZfPdoxLjMzaUE2m7ilCM6X/fX45yokl/FCJIfhPAETDDoGTg1kttOvA2x+vemUrZaqU/fey6G3D0pJcWvx7/6IyJ/fTPVo3syun/mMEClWv2ipx0lkdahyKripLzyHeKxUtKZM7QldPDwtxEWRWN8yhHamYj63ux9b/h/gyE8GiyDfrGVr0xvgSSRSL2ELhVhRqZeJYUamWKAAAA"
+    // },
     {
-      name: "Go",
-      url: "data:image/webp;base64,UklGRloBAABXRUJQVlA4IE4BAABQBwCdASocABwAPp0gp1OloSWlmACwE4lsAJ0yg8zmTbzG2AsAAeg/5+9gDdAB4F/GD0fZ0a7HB1qmIuzNiDwe70KAAP7YU7fHn5l11lxxw88qa0p1Wfe/xSZUbz65Eruk9GDQTs46R/0+R9WJ+R+kYc4z8rB8CHpfWgY1BZ/v4+p9eOFJJf1tNkMUz2yL21Oz48PZ4BVbZxh6SZYtpXyeevpli6jmryo3vQHsObUjEymsZfPdoxLjMzaUE2m7ilCM6X/fX45yokl/FCJIfhPAETDDoGTg1kttOvA2x+vemUrZaqU/fey6G3D0pJcWvx7/6IyJ/fTPVo3syun/mMEClWv2ipx0lkdahyKripLzyHeKxUtKZM7QldPDwtxEWRWN8yhHamYj63ux9b/h/gyE8GiyDfrGVr0xvgSSRSL2ELhVhRqZeJYUamWKAAAA"
+      name: "PHP",
+      url: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
     },
     {
       name:"Distributed Systems",
@@ -202,7 +206,7 @@ export const DATA = {
         {
           title: "fix(tooltip): wrap TooltipContent in a Portal for improved rendering ",
           href: "https://github.com/formbricks/formbricks/pull/6458",
-          status: "open",
+          status: "merged",
           date: "Aug 2025",
           technologies: ["TypeScript", "React"],
         }
