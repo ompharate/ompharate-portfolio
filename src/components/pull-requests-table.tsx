@@ -185,3 +185,4 @@ export function PullRequestsTable({ contributions }: Props) {
     </Card>
   );
 }
+ 

@@ -171,7 +171,7 @@ export const DATA = {
       badges: [],
       href: "https://github.com/voxora-cloud",
       location: "Remote",
-      title: "Founder and Lead Developer",
+      title: "Maintainer and Lead Developer",
       logoUrl: "https://avatars.githubusercontent.com/u/222506196?s=200&v=4",
       start: "July 2025",
       description:

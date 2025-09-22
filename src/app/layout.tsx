@@ -16,13 +16,13 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
-    default: `${DATA.name} – Software Engineer | Founder of Voxora`,
+    default: `${DATA.name} – Software Engineer`,
     template: `%s | ${DATA.name}`,
   },
   description:
     "Om Pharate is a Software Engineer and a final-year Computer Engineering student at I²IT Pune. Founder of Voxora, passionate about real-time systems and scalable backend infrastructure.",
   openGraph: {
-    title: `${DATA.name} – Founder of Voxora`,
+    title: `${DATA.name}`,
     description:
       "Om Pharate is a Software Engineer and founder of Voxora. Portfolio, projects, and open-source contributions.",
     url: DATA.url,
